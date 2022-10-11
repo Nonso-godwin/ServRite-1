@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    background-color:#cbced1 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+   }   
+   .pay{
+   font-family:'Times New Roman', Times, serif;
+   font-style: italic;
+   color: white;
+   }
+   button{
+    background-color: #4ce13d;
+   }
+  .box{
+    background-color: #691076;
+    width:250px;
+    border-radius: 15px;
+    height:310px;
+    border-color: black;
+    border-width:thin;
+    border-style:solid ;
+  } 
+  label{
+    color: white;
+  }
