@@ -4,7 +4,7 @@
   }
   .circle{
     position: relative;
-    left: 120px;
+    left: 220px;
     top: -40px;
   }
   
@@ -67,6 +67,7 @@
   }
   #list{
     background-color: #b1b1b1;
+    border-color: #7d0290;
   }
   .refresh{
     background-color: #691076;
@@ -97,9 +98,5 @@
     border-radius: 25px;
     font-size: 16px;
     width: 100px;
-}
-.card{
-border-color: #7d0290;
-min-height: 100px;
 }
   
