@@ -47,7 +47,7 @@
       var getmor = document.getElementById("menuBox").value;
       var ff = document.getElementById("newBox").value;
       var quant = document.getElementById("qty").value;
-      var conc = ""+quant +" " + getmor + " = N"+ ff;
+      var conc = ""+quant +" " + getmor + " = N="+ ff;
       opt.text =""+conc;
       opt.value=""+getmor;
       document.getElementById("list").options.add(opt); 
@@ -71,12 +71,20 @@ return false;
       var s = 1;  
       var Index;  
       if (document.getElementById("list").selectedIndex == -1) {  
-         alert("Please select any item from the ListBox");  
+         alert("Please select a menu");  
          return true;  
       }  
       while (s > 0) {  
           Index = document.getElementById("list").selectedIndex;  
           if (Index >= 0) {  
+            var t = document.getElementById("list");
+            let gg = t.options[t.selectedIndex].text;
+            let aaa = gg.split("=");
+            let prz = aaa[2];
+            let fd = document.getElementById("ft").value;
+            let dif = parseInt(fd) - parseInt(prz);
+            document.getElementById("ft").value = dif;
+
                document.getElementById("list").options[Index] = null;  
                 --i;  
           }  
@@ -87,9 +95,16 @@ return false;
   } 
 
 
-  function pay(){
+  function placeOrder(){
+    let po = document.getElementById("ft").value;
+    if(po > "0"){
     location.replace("payment.html");
+      } else{
+        alert("Please select a menu");
+      }
+    
   }
+  
   function logout(){
-    location.replace("landing.html");
-  }    
+  location.replace("index.html")
+  }

@@ -100,5 +100,6 @@
 }
 .card{
 border-color: #7d0290;
+min-height: 100px;
 }
   
