@@ -31,8 +31,8 @@
             <div class="col-md-8 com-md-offset-2" style="margin:auto"> 
         <div style="margin:auto">
             
-                 
-            <button onclick="myFunction()" class="btn dropbtn">Menu List</button>
+                 <h3><b>Order Section</b></h3><br>
+            <button onclick="myFunction()" class="btn dropbtn">Select A Menu</button>
             </div>
             </div>
         </div><br><div class="row">
@@ -49,32 +49,46 @@
                     <a href="#moi" onclick="show('Moi Moi*2300')">Moi Moi</a> 
                 </div>
               </div><span id="cas" >
-                  <input type="text" id="menuBox"  class="form-control mBox">
+                  <input type="text" id="menuBox"  class="form-control mBox" placeholder="Menu">
                   <br>
-                  <input type="" id="price" class="form-control mBox"> 
+                  <input type="" id="price" class="form-control mBox" placeholder="Price"> 
                   <br>
-                  <input type="number" id="qty" placeholder="Qty" class="form-control mBox" onkeyup="getTotal()">
-                </span>
-                  <div>
-                <br>         
-                  <input type="" id="newBox" class="form-control mBox">
+                  <input type="number" id="qty" placeholder="Qty" class="form-control mBox" onkeyup="getTotal()"><br>
+                  <input type="" id="newBox" class="form-control mBox" placeholder="Total">
+                </span>                     
+                  <div>                          
+                <!--<div class="container"> 
+                  <br/>
+                  <div class="panel panel-default">
+                        <div class="panel-body">                              
+                              <fieldset class="col-md-6 border p-2">    	
+                            <legend>List of Orders</legend>                            
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <label class="control-label input-label"> <input type="radio" value="empty" name="listBox" class="form-control" multiple  id="list"></label>
+                              </div>
+                            </div>                            
+                          </fieldset>				                         
+                          <div class="clearfix"></div>
+                              </div>                                  
+                  </div>
+                   </div>     -->              
                   <br>
                   <div class="form-group">
-                    <select name="listBox" class="form-control" multiple  id="list"> 
-                       
+                    <h5><b>Summary of Orders</b></h5>
+                    <select name="listBox" class="form-control" multiple  id="list">                        
                       <option value="empty"></option>
-                      </select>  
-                      <input type="" value="0" id="ft" class="form-control">
-                        
-                </div>
-            </div>
+                    </select>
+                    <input type="" value="0" id="ft" class="form-control">                                              
+                </div> 
+                
               </div><br> 
               
                       <div align="center">
                 
                          <input type="button" name="delete" class="btn btn-danger" value="Delete" onclick="deleteValue();"/>
                          &nbsp;
-                <input type="button" name="" class="btn lock" value="Lock Order" onclick="lock()"/>
+                <input type="button" name="" class="btn lock" value="Add Order" onclick="lock()"/>
                 &nbsp; 
                 <input type="button" name="" class="btn lock" value="Place Order" onclick="placeOrder()"/>
               </div>
