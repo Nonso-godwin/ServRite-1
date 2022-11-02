@@ -1,0 +1,82 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+<link rel="stylesheet" href="assets/asset/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/sum.css">
+</head>
+<body >
+    <nav class="navbar navbar-inverse na">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <span>
+            <h2>ServRite</h2>
+            <img class="circle" src="images.png" width="50px" > 
+          </span>                
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+           
+            <li><span class="glyphicon glyphicon-user" id="nam"></span> Name</li>
+            
+           <button class="btn" onclick="logout()" ><li><span class="glyphicon glyphicon-log-out"></span> Log out</li></button> 
+          </ul>
+          </div>     
+</nav><br>
+<h2 align="center">Summary Box</h2><br>
+<table class="tab" >
+    <tr class="fst">
+<td>S/N</td>
+<td>Items</td>
+ <td >Quantity</td>
+<td >Price $</td>
+<td >Amount $</td>
+  </tr>
+    <tr class="bod">
+<td> 1</td>
+<td>Jollof Rice</td>
+<span id="qty"><td>2</td></span>
+<span><td>2500</td></span>
+<td><span id="a">5000</span></td>
+  </tr>
+  <tr class="bod">
+<td>2</td>
+<td>Jollof</td>
+<span id="qty"><td>1</td></span>
+<span><td>2500</td></span>
+<td><span id="b">2500</span></td>
+  </tr>   
+</table><br>
+<!-- <button type="button" class="btn btn-md"style="background-color:orange" onclick="total()">Total</button> -->
+<span id="ttl">
+</span>
+ <br><br> 
+ <!-- <button type="button" class="btn btn-md"style="background-color:#4ce13d" data-toggle="modal" data-target="#myModal">Place order</button>   -->
+<!-- <div class="container">
+   Modal 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+       Modal content
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-body" >Please select an option</h4>
+        </div>
+        <div class="modal-body opt">
+          <button class="btn btn-md btn-success" onclick="pay()">Yes</button>
+          <button class="btn btn-md btn-danger">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>   -->
+  <div class="footer">
+    <h4> ServRite 2022 </h4>
+    </div>
+    <script src="assets/asset/js/jquery.js"></script>
+    <script src="assets/asset/js/bootstrap.min.js"></script>
+    <script src="assets/js/sumary.js"></script>
+</body>
+</html>
